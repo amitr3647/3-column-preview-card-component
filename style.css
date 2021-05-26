@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.section{display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  width:100vw;
+  height:100vh;  
+  
+}
+
+.row {
+  display:flex;
+  height: 400px;
+  width: 650px;
+  border-radius:10px;
+  overflow: hidden;
+  
+  
+    
+}
+.span-1-of-3{
+    width:33.33%;
+    position: relative;
+    padding:25px;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color:hsl(184, 100%, 22%) ;
+}
+.luxury{
+    background-color:hsl(179, 100%, 13%);
+}
+
+
+.button{
+    text-decoration: none;
+    position: absolute;
+    bottom:50px;
+    /* left:40px; */
+    border:1px solid #fff;
+    background-color: #fff;
+    padding:7px 14px;
+    border-radius: 30px;
+}
+.sedan-button{
+    color:hsl(31, 77%, 52%);
+}
+.sedan-button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:#fff;
+}
+.suv-button{
+    color:hsl(184, 100%, 22%) ;
+}
+.suv-button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:#fff;
+}
+.luxury-button{
+    color:hsl(179, 100%, 13%);
+}
+.luxury-button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color:#fff;
+}
+
+
+h1{
+    color:#fff;
+    text-transform: uppercase;
+    padding:18px 0;
+    font-size: 28px;
+    font-family: 'Big Shoulders Display';
+}
+p{
+    color:#fff;
+    padding-top:15px;
+    font-family: 'Lexend Deca';
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+/*mobile view*/
+@media only screen and (max-width:655px){
+    
+
+    .row{display:block;
+        width:100%;
+        height:auto;
+       border-radius:0;
+       overflow:auto;
+           
+    }
+
+      .span-1-of-3{
+          width:100%;
+          padding:30px;
+          height:350px;
+    }
+    h1{
+        font-size: 38px;
+    }
+p{
+    font-size: 15px;
+}
+
+
